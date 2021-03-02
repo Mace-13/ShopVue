@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import CartProductsList from "@/components/Cart/CartProductsList";
+import CartProductsList from "@/components/features/User/Cart/CartProductsList";
 import {eventBus} from "@/main";
 
 export default {

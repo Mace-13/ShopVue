@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import ShopProductItem from "@/components/Shop/ShopProductItem";
+import ShopProductItem from "@/components/features/User/Shop/ShopProductItem";
 export default {
   components:{
     ShopProductItem

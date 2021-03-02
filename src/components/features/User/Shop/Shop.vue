@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import ShopProductsList from "@/components/Shop/ShopProductsList";
+import ShopProductsList from "@/components/features/User/Shop/ShopProductsList";
 import {eventBus} from "@/main";
 //import ShopProductItem from "@/components/Shop/ShopProductItem";
 export default {
