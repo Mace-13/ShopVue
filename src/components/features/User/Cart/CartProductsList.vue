@@ -12,18 +12,15 @@
 
 <script>
 import CartProductItem from "./CartProductItem";
+import { mapGetters } from 'vuex'
+
 export default {
   components:{
     CartProductItem
   },
   props: [ 'cart' ],
   computed: {
-    total(){
-      return this.cart.reduce((acc, v) => {
-        acc += v.price
-        return acc
-      },0)
-    }
+    ...mapGetters('cart', ['total'])
   }
 }
 </script>
