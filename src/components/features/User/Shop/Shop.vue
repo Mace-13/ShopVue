@@ -3,25 +3,15 @@
 </template>
 
 <script>
-import ShopProductsList from "@/components/features/User/Shop/ShopProductsList";
-import {eventBus} from "@/main";
-//import ShopProductItem from "@/components/Shop/ShopProductItem";
+import ShopProductsList from "./ShopProductsList";
+
+
 export default {
+  props: ['products'],
  components: {
    ShopProductsList
-   //ShopProductItem
- },
-  data(){
-   return{
-     products: []
-   }
-  },
-  created(){
-   this.products = eventBus.products;
-   eventBus.$on('update:products',(products)=>{
-     this.products = products;
-   })
-  }
+
+ }
 }
 </script>
 
